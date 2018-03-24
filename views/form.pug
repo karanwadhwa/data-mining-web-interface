@@ -2,24 +2,24 @@ extends layout
 
 block content
 
-  .form(method='POST' action='/' style='padding-bottom: 10px;')
+  .form(method='POST' action='/bhel' style='padding-bottom: 10px;')
     .form-subtitle(style="font-size: 25px;")
       | Personal Details.
     .form-row
       .form-group.col-md-4
         label Name
-        input#inputEmail4.form-control(type='text', placeholder='Name' name='name')
+        input#inputEmail4.form-control(type='text', placeholder='Name' name='name' required)
       .col-md-1
       .form-group.col-md-6
         label Email
-        input#inputPassword4.form-control(type='email', placeholder='Email' name='email')
+        input#inputPassword4.form-control(type='email', placeholder='Email' name='email' required)
     .form-row
       .form-group.col-md-2
         label Registration No.
-        input#inputAddress.form-control(type='number', placeholder='Reg. No.' name='reg')
+        input#inputAddress.form-control(type='number', placeholder='Reg. No.' name='reg' required)
       .form-group.col-md-2
         label Age
-        input#inputAddress2.form-control(type='number', placeholder='Age' name='age')
+        input#inputAddress2.form-control(type='number', placeholder='Age' name='age' required)
       .form-group.col-md-1
       .form-group.col-md-3
         label Gender
@@ -51,26 +51,26 @@ block content
     .form-row
       .form-group.col-md-2.sm-2
         label 10th Boards %
-        input#inputCity.form-control(type='number' name='10%')
+        input#inputCity.form-control(type='number' name='10%' required)
       .form-group.col-md-2.sm-2
         label 12th Boards %
-        input#inputCity.form-control(type='number' name='12%')
+        input#inputCity.form-control(type='number' name='12%' required)
       .col-md-1
       .form-group.col-md-2.sm-2
         label 12th Physics
-        input#inputCity.form-control(type='number' name='12Phy')
+        input#inputCity.form-control(type='number' name='12Phy' required)
       .form-group.col-md-2.sm-2
         label 12th Chemistry
-        input#inputCity.form-control(type='number' name='12Chem')
+        input#inputCity.form-control(type='number' name='12Chem' required)
       .form-group.col-md-2.sm-2
         label 12th Maths
-        input#inputCity.form-control(type='number' name='12Math')
+        input#inputCity.form-control(type='number' name='12Math' required)
     br
     .form-row
       .form-group.col-md-3
         label Physics 1 [TERM-TEST]
-        select.form-control(type='number' name='TTPhy1')
-          option( disabled ='' selected ='') Grade
+        select.form-control(type='number' name='TTPhy1' required)
+          option(value='' disabled ='' selected ='') Grade
           option(value='O') O
           option(value='A') A
           option(value='B') B
@@ -81,8 +81,8 @@ block content
       .col-md-1
       .form-group.col-md-3
         label Chemistry 1 [TERM-TEST]
-        select.form-control(type='number' name='TTChem1')
-          option( disabled ='' selected ='') Grade
+        select.form-control(type='number' name='TTChem1' required)
+          option(value='' disabled ='' selected ='') Grade
           option(value='O') O
           option(value='A') A
           option(value='B') B
@@ -93,8 +93,8 @@ block content
       .col-md-1
       .form-group.col-md-3
         label Maths 1 [TERM-TEST]
-        select.form-control(type='number' name='TTMath1')
-          option( disabled ='' selected ='') Grade
+        select.form-control(type='number' name='TTMath1' required)
+          option(value='' disabled ='' selected ='') Grade
           option(value='O') O
           option(value='A') A
           option(value='B') B
@@ -106,8 +106,8 @@ block content
     .form-row
       .form-group.col-md-3
         label Physics 1 GRADE
-        select.form-control(type='number' name='Phy1')
-          option( disabled ='' selected ='') Grade
+        select.form-control(type='number' name='Phy1' required)
+          option(value='' disabled ='' selected ='') Grade
           option(value='O') O
           option(value='A') A
           option(value='B') B
@@ -118,8 +118,8 @@ block content
       .col-md-1
       .form-group.col-md-3
         label Chemistry 1 GRADE
-        select.form-control(type='number' name='Chem1')
-          option( disabled ='' selected ='') Grade
+        select.form-control(type='number' name='Chem1' required)
+          option(value='' disabled ='' selected ='') Grade
           option(value='O') O
           option(value='A') A
           option(value='B') B
@@ -130,8 +130,8 @@ block content
       .col-md-1
       .form-group.col-md-3
         label Maths 1 GRADE
-        select.form-control(type='number' name='Math1')
-          option( disabled ='' selected ='') Grade
+        select.form-control(type='number' name='Math1' required)
+          option(value='' disabled ='' selected ='') Grade
           option(value='O') O
           option(value='A') A
           option(value='B') B
@@ -142,13 +142,13 @@ block content
     .form-row
       .form-group.col-md-3
         label SEMESTER 1 POINTER
-        input#inputCity.form-control(type='number' name='SEM1')
+        input#inputCity.form-control(type='number' name='SEM1' required)
 
     .form-row
       .form-group.col-md-3
         label Physics 2 [TERM-TEST]
-        select.form-control(type='number' name='TTPhy2')
-          option( disabled ='' selected ='') Grade
+        select.form-control(type='number' name='TTPhy2' required)
+          option(value='' disabled ='' selected ='') Grade
           option(value='O') O
           option(value='A') A
           option(value='B') B
@@ -159,8 +159,8 @@ block content
       .col-md-1
       .form-group.col-md-3
         label Chemistry 2 [TERM-TEST]
-        select.form-control(type='number' name='TTChem2')
-          option( disabled ='' selected ='') Grade
+        select.form-control(type='number' name='TTChem2' required)
+          option(value='' disabled ='' selected ='') Grade
           option(value='O') O
           option(value='A') A
           option(value='B') B
@@ -171,8 +171,8 @@ block content
       .col-md-1
       .form-group.col-md-3
         label Maths 2 [TERM-TEST]
-        select.form-control(type='number' name='TTMath2')
-          option( disabled selected ) Grade
+        select.form-control(type='number' name='TTMath2' required)
+          option(value='' disabled selected ) Grade
           option(value='O') O
           option(value='A') A
           option(value='B') B
@@ -181,7 +181,7 @@ block content
           option(value='E') E
           option(value='F') F
 
-    .form-subtitle(style="font-size: 25px; padding-top: 10px;")
+    .form-subtitle(style="font-size: 25px; padding-top: 10px;" required)
         | Non Academic Details.
     br
     .form-row
@@ -230,5 +230,5 @@ block content
           .custom-control.custom-radio.custom-control-inline
             input#poorHealth.custom-control-input(type='radio', name='health' value='Poor')
             label.custom-control-label(for='poorHealth') Poor
-
-    button.btn.btn-primary.justify-content-end(type='submit') Submit
+    .form-row
+      button.btn.btn-primary.justify-content-end(type='submit') Submit
