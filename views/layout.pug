@@ -22,7 +22,7 @@ html
                     | Admin Login
 
     .container(style="padding-top: 20px;")
-      //!= messages('message', locals)
+      != messages('message', locals)
       if errors
         for error in errors
           div(class='card-panel red lighten-4 red-text text-darken-4') #{error.msg}

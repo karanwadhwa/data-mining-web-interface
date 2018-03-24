@@ -2,7 +2,7 @@ extends layout
 
 block content
 
-  .form(method='POST' action='/bhel' style='padding-bottom: 10px;')
+  form(method='POST' action='/' style='padding-bottom: 10px;')
     .form-subtitle(style="font-size: 25px;")
       | Personal Details.
     .form-row
@@ -37,13 +37,13 @@ block content
         label 10th Board
         div
           .custom-control.custom-radio.custom-control-inline
-            input#ssc.custom-control-input(type='radio', name='10Board' value='SSC')
+            input#ssc.custom-control-input(type='radio', name='tenBoard' value='SSC')
             label.custom-control-label(for='ssc') SSC
           .custom-control.custom-radio.custom-control-inline
-            input#cbse.custom-control-input(type='radio', name='10Board' value='CBSE')
+            input#cbse.custom-control-input(type='radio', name='tenBoard' value='CBSE')
             label.custom-control-label(for='cbse') CBSE
           .custom-control.custom-radio.custom-control-inline
-            input#icse.custom-control-input(type='radio', name='10Board' value='ICSE')
+            input#icse.custom-control-input(type='radio', name='tenBoard' value='ICSE')
             label.custom-control-label(for='icse') ICSE
     .form-subtitle(style="font-size: 25px; padding-top: 10px;")
       | Academic Details.
@@ -51,20 +51,20 @@ block content
     .form-row
       .form-group.col-md-2.sm-2
         label 10th Boards %
-        input#inputCity.form-control(type='number' name='10%' required)
+        input#inputCity.form-control(type='number' name='ten' required)
       .form-group.col-md-2.sm-2
         label 12th Boards %
-        input#inputCity.form-control(type='number' name='12%' required)
+        input#inputCity.form-control(type='number' name='twelve' required)
       .col-md-1
       .form-group.col-md-2.sm-2
         label 12th Physics
-        input#inputCity.form-control(type='number' name='12Phy' required)
+        input#inputCity.form-control(type='number' name='twPhy' required)
       .form-group.col-md-2.sm-2
         label 12th Chemistry
-        input#inputCity.form-control(type='number' name='12Chem' required)
+        input#inputCity.form-control(type='number' name='twChem' required)
       .form-group.col-md-2.sm-2
         label 12th Maths
-        input#inputCity.form-control(type='number' name='12Math' required)
+        input#inputCity.form-control(type='number' name='twMath' required)
     br
     .form-row
       .form-group.col-md-3

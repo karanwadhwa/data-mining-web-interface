@@ -21,23 +21,27 @@ const studentSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  "10%": {
+  "tenBoard": {
     type: String,
     required: true
   },
-  "12%": {
+  "ten": {
     type: String,
     required: true
   },
-  "12Phy": {
+  "twelve": {
     type: String,
     required: true
   },
-  "12Chem": {
+  "twPhy": {
     type: String,
     required: true
   },
-  "12Math": {
+  "twChem": {
+    type: String,
+    required: true
+  },
+  "twMath": {
     type: String,
     required: true
   },
