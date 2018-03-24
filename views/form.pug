@@ -16,10 +16,10 @@ block content
     .form-row
       .form-group.col-md-2
         label Registration No.
-        input#inputAddress.form-control(type='number', placeholder='Reg. No.' name='reg' required)
+        input#inputAddress.form-control(type='number', placeholder='Reg. No.' name='reg' required='required', min='10000', max='99999')
       .form-group.col-md-2
         label Age
-        input#inputAddress2.form-control(type='number', placeholder='Age' name='age' required)
+        input#inputAddress2.form-control(type='number', placeholder='Age' name='age' required='required', min='14', max='27')
       .form-group.col-md-1
       .form-group.col-md-3
         label Gender
@@ -51,20 +51,20 @@ block content
     .form-row
       .form-group.col-md-2.sm-2
         label 10th Boards %
-        input#inputCity.form-control(type='number' name='ten' required)
+        input#inputCity.form-control(type='number' name='ten' required='required', min='35', max='100')
       .form-group.col-md-2.sm-2
         label 12th Boards %
-        input#inputCity.form-control(type='number' name='twelve' required)
+        input#inputCity.form-control(type='number' name='twelve' required='required', min='35', max='100')
       .col-md-1
       .form-group.col-md-2.sm-2
-        label 12th Physics
-        input#inputCity.form-control(type='number' name='twPhy' required)
+        label 12th Physics Marks
+        input#inputCity.form-control(type='number' name='twPhy' required='required', min='35', max='100')
       .form-group.col-md-2.sm-2
-        label 12th Chemistry
-        input#inputCity.form-control(type='number' name='twChem' required)
+        label 12th Chemistry Marks
+        input#inputCity.form-control(type='number' name='twChem' required='required', min='35', max='100')
       .form-group.col-md-2.sm-2
-        label 12th Maths
-        input#inputCity.form-control(type='number' name='twMath' required)
+        label 12th Maths Marks
+        input#inputCity.form-control(type='number' name='twMath' required='required', min='35', max='100')
     br
     .form-row
       .form-group.col-md-3
@@ -142,12 +142,12 @@ block content
     .form-row
       .form-group.col-md-3
         label SEMESTER 1 POINTER
-        input#inputCity.form-control(type='number' name='SEM1' required)
+        input#inputCity.form-control(type='number' name='SEM1' required='required', min='4', max='10')
 
     .form-row
       .form-group.col-md-3
         label Physics 2 [TERM-TEST]
-        select.form-control(type='number' name='TTPhy2' required)
+        select.form-control(type='number' name='TTPhy2' required='required', min='0', max='20')
           option(value='' disabled ='' selected ='') Grade
           option(value='O') O
           option(value='A') A
@@ -159,7 +159,7 @@ block content
       .col-md-1
       .form-group.col-md-3
         label Chemistry 2 [TERM-TEST]
-        select.form-control(type='number' name='TTChem2' required)
+        select.form-control(type='number' name='TTChem2' required='required', min='0', max='20')
           option(value='' disabled ='' selected ='') Grade
           option(value='O') O
           option(value='A') A
@@ -171,7 +171,7 @@ block content
       .col-md-1
       .form-group.col-md-3
         label Maths 2 [TERM-TEST]
-        select.form-control(type='number' name='TTMath2' required)
+        select.form-control(type='number' name='TTMath2' required='required', min='0', max='20')
           option(value='' disabled selected ) Grade
           option(value='O') O
           option(value='A') A
