@@ -7,6 +7,14 @@ const flash = require('connect-flash');
 const expressValidator = require('express-validator');
 const cookieParser = require('cookie-parser');
 
+mongoose.connect('mongodb://root:rootpassword@ds119059.mlab.com:19059/training');
+let db = mongoose.connection;
+
+// Check db connection
+db.once('open', function(){
+  console.log('Connected to MongoDB');
+});
+
 // Initialize app
 const app = express();
 
