@@ -1,0 +1,234 @@
+extends layout
+
+block content
+
+  .form(method='POST' action='/' style='padding-bottom: 10px;')
+    .form-subtitle(style="font-size: 25px;")
+      | Personal Details.
+    .form-row
+      .form-group.col-md-4
+        label Name
+        input#inputEmail4.form-control(type='text', placeholder='Name' name='name')
+      .col-md-1
+      .form-group.col-md-6
+        label Email
+        input#inputPassword4.form-control(type='email', placeholder='Email' name='email')
+    .form-row
+      .form-group.col-md-2
+        label Registration No.
+        input#inputAddress.form-control(type='number', placeholder='Reg. No.' name='reg')
+      .form-group.col-md-2
+        label Age
+        input#inputAddress2.form-control(type='number', placeholder='Age' name='age')
+      .form-group.col-md-1
+      .form-group.col-md-3
+        label Gender
+        div
+          .custom-control.custom-radio.custom-control-inline
+            input#male.custom-control-input(type='radio', name='gender' value='Male')
+            label.custom-control-label(for='male') Male
+          .custom-control.custom-radio.custom-control-inline
+            input#female.custom-control-input(type='radio', name='gender' value='Female')
+            label.custom-control-label(for='female') Female
+          .custom-control.custom-radio.custom-control-inline
+            input#others.custom-control-input(type='radio', name='gender' value='Other')
+            label.custom-control-label(for='others') Others
+      .form-group.col-md-3
+        label 10th Board
+        div
+          .custom-control.custom-radio.custom-control-inline
+            input#ssc.custom-control-input(type='radio', name='10Board' value='SSC')
+            label.custom-control-label(for='ssc') SSC
+          .custom-control.custom-radio.custom-control-inline
+            input#cbse.custom-control-input(type='radio', name='10Board' value='CBSE')
+            label.custom-control-label(for='cbse') CBSE
+          .custom-control.custom-radio.custom-control-inline
+            input#icse.custom-control-input(type='radio', name='10Board' value='ICSE')
+            label.custom-control-label(for='icse') ICSE
+    .form-subtitle(style="font-size: 25px; padding-top: 10px;")
+      | Academic Details.
+
+    .form-row
+      .form-group.col-md-2.sm-2
+        label 10th Boards %
+        input#inputCity.form-control(type='number' name='10%')
+      .form-group.col-md-2.sm-2
+        label 12th Boards %
+        input#inputCity.form-control(type='number' name='12%')
+      .col-md-1
+      .form-group.col-md-2.sm-2
+        label 12th Physics
+        input#inputCity.form-control(type='number' name='12Phy')
+      .form-group.col-md-2.sm-2
+        label 12th Chemistry
+        input#inputCity.form-control(type='number' name='12Chem')
+      .form-group.col-md-2.sm-2
+        label 12th Maths
+        input#inputCity.form-control(type='number' name='12Math')
+    br
+    .form-row
+      .form-group.col-md-3
+        label Physics 1 [TERM-TEST]
+        select.form-control(type='number' name='TTPhy1')
+          option( disabled ='' selected ='') Grade
+          option(value='O') O
+          option(value='A') A
+          option(value='B') B
+          option(value='C') C
+          option(value='D') D
+          option(value='E') E
+          option(value='F') F
+      .col-md-1
+      .form-group.col-md-3
+        label Chemistry 1 [TERM-TEST]
+        select.form-control(type='number' name='TTChem1')
+          option( disabled ='' selected ='') Grade
+          option(value='O') O
+          option(value='A') A
+          option(value='B') B
+          option(value='C') C
+          option(value='D') D
+          option(value='E') E
+          option(value='F') F
+      .col-md-1
+      .form-group.col-md-3
+        label Maths 1 [TERM-TEST]
+        select.form-control(type='number' name='TTMath1')
+          option( disabled ='' selected ='') Grade
+          option(value='O') O
+          option(value='A') A
+          option(value='B') B
+          option(value='C') C
+          option(value='D') D
+          option(value='E') E
+          option(value='F') F
+
+    .form-row
+      .form-group.col-md-3
+        label Physics 1 GRADE
+        select.form-control(type='number' name='Phy1')
+          option( disabled ='' selected ='') Grade
+          option(value='O') O
+          option(value='A') A
+          option(value='B') B
+          option(value='C') C
+          option(value='D') D
+          option(value='E') E
+          option(value='F') F
+      .col-md-1
+      .form-group.col-md-3
+        label Chemistry 1 GRADE
+        select.form-control(type='number' name='Chem1')
+          option( disabled ='' selected ='') Grade
+          option(value='O') O
+          option(value='A') A
+          option(value='B') B
+          option(value='C') C
+          option(value='D') D
+          option(value='E') E
+          option(value='F') F
+      .col-md-1
+      .form-group.col-md-3
+        label Maths 1 GRADE
+        select.form-control(type='number' name='Math1')
+          option( disabled ='' selected ='') Grade
+          option(value='O') O
+          option(value='A') A
+          option(value='B') B
+          option(value='C') C
+          option(value='D') D
+          option(value='E') E
+          option(value='F') F
+    .form-row
+      .form-group.col-md-3
+        label SEMESTER 1 POINTER
+        input#inputCity.form-control(type='number' name='SEM1')
+
+    .form-row
+      .form-group.col-md-3
+        label Physics 2 [TERM-TEST]
+        select.form-control(type='number' name='TTPhy2')
+          option( disabled ='' selected ='') Grade
+          option(value='O') O
+          option(value='A') A
+          option(value='B') B
+          option(value='C') C
+          option(value='D') D
+          option(value='E') E
+          option(value='F') F
+      .col-md-1
+      .form-group.col-md-3
+        label Chemistry 2 [TERM-TEST]
+        select.form-control(type='number' name='TTChem2')
+          option( disabled ='' selected ='') Grade
+          option(value='O') O
+          option(value='A') A
+          option(value='B') B
+          option(value='C') C
+          option(value='D') D
+          option(value='E') E
+          option(value='F') F
+      .col-md-1
+      .form-group.col-md-3
+        label Maths 2 [TERM-TEST]
+        select.form-control(type='number' name='TTMath2')
+          option( disabled selected ) Grade
+          option(value='O') O
+          option(value='A') A
+          option(value='B') B
+          option(value='C') C
+          option(value='D') D
+          option(value='E') E
+          option(value='F') F
+
+    .form-subtitle(style="font-size: 25px; padding-top: 10px;")
+        | Non Academic Details.
+    br
+    .form-row
+      .form-group.col-md-2
+        label External Coaching
+        div
+          .custom-control.custom-radio.custom-control-inline
+            input#extCoachingYes.custom-control-input(type='radio', name='coaching' value='Yes')
+            label.custom-control-label(for='extCoachingYes') YES
+          .custom-control.custom-radio.custom-control-inline
+            input#extCoachingNo.custom-control-input(type='radio', name='coaching' value='No')
+            label.custom-control-label(for='extCoachingNo') NO
+      .form-group.col-md-4
+        label Travel Time to College
+        div
+          .custom-control.custom-radio.custom-control-inline
+            input#30.custom-control-input(type='radio', name='travel' value='Less than 30mins')
+            label.custom-control-label(for='30') Less than 30mins
+          .custom-control.custom-radio.custom-control-inline
+            input#30-1.custom-control-input(type='radio', name='travel' value='30 mins - 1 hr')
+            label.custom-control-label(for='30-1') 30 mins - 1 hr
+          .custom-control.custom-radio.custom-control-inline
+            input#1.custom-control-input(type='radio', name='travel' value='more than 1 hr')
+            label.custom-control-label(for='1') More than 1 hr
+      .form-group.col-md-3
+        label College Attendance
+        div
+          .custom-control.custom-radio.custom-control-inline
+            input#50.custom-control-input(type='radio', name='attendance' value='Less than 50 %')
+            label.custom-control-label(for='50') Less Than 50%
+          .custom-control.custom-radio.custom-control-inline
+            input#50-75.custom-control-input(type='radio', name='attendance' value='50-75 %')
+            label.custom-control-label(for='50-75') 50-75%
+          .custom-control.custom-radio.custom-control-inline
+            input#75.custom-control-input(type='radio', name='attendance' value='More than 75%')
+            label.custom-control-label(for='75') More than 75%
+      .form-group.col-md-3
+        label Average Health
+        div
+          .custom-control.custom-radio.custom-control-inline
+            input#goodHealth.custom-control-input(type='radio', name='health' value='Good')
+            label.custom-control-label(for='goodHealth') Good
+          .custom-control.custom-radio.custom-control-inline
+            input#avgHealth.custom-control-input(type='radio', name='health' value='Average')
+            label.custom-control-label(for='avgHealth') Average
+          .custom-control.custom-radio.custom-control-inline
+            input#poorHealth.custom-control-input(type='radio', name='health' value='Poor')
+            label.custom-control-label(for='poorHealth') Poor
+
+    button.btn.btn-primary.justify-content-end(type='submit') Submit
